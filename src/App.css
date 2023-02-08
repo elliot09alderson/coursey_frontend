@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+
+ *{
+
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+    }
+
+    #image-logo{
+    margin: 0;
+    padding: 0;
+      max-width: 200px;
+    }
