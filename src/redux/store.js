@@ -6,5 +6,5 @@ const store  = configureStore({
     }
 })
 
-export const server = "https://coursey-backend.vercel.app"
+export const server = "https://sanusolar.onrender.com/api/v1"
 export default store

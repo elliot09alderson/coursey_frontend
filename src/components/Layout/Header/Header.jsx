@@ -4,11 +4,11 @@ import {RiDashboardFill, RiLogoutBoxLine, RiMenu5Fill} from "react-icons/ri"
 import { Drawer, DrawerBody, DrawerContent,Image, DrawerHeader,Button, DrawerOverlay, useDisclosure, VStack, HStack } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import LOGO from './LOGO'
-const Header = () => {
+import { useSelector } from 'react-redux'
+const Header = ({isAuthenticated=false,user}) => {
 
     const {isOpen,onOpen, onClose}= useDisclosure();
-    const isAuthenticated = false;
-    const user ={role:"user"}
+
  function logOutHandler(){
     console.log("logout...")
     onClose()
